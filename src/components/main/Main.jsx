@@ -5,26 +5,24 @@ import Drinks from '../drinks/Drinks'
 
 function Main(){
 
-    const [drinksNames,setDrinksNames] = useState([])
-    const [drinksImgs, setDrinksImgs] = useState([])
+    const [drinks, setDrinks] = useState([])
 
-    const handleAPI = useCallback(async () => {
-		const data = await getCocktails()
-        setDrinksNames(data.data.drinks.map(drink => drink.strDrink))
-        setDrinksImgs(data.data.drinks.map(drink => drink.strDrinkThumb))
-        console.log(drinksNames)
-        console.log(drinksImgs)
-        console.log('teste1')
-	}, [])
+    const handleCoktails = () => {
+        getCocktails()
+        .then(response => {
+            console.log(response)
+            setDrinks(response.data.drinks)
+        })
+    }
 
-	useEffect(() => {
-		handleAPI()
-	}, [handleAPI])
+    useEffect(() => {
+        handleCoktails()
+    }, [])
 
     return (
         <main>
             <h3>Choose your drinks: </h3>
-            <Drinks drinksImgs = {drinksImgs} drinksNames = {drinksNames}/>
+            <Drinks drinks={drinks}/>
         </main>
     )
 }
