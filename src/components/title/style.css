@@ -1,0 +1,21 @@
+.containerVideo{
+    /* Centralizando os itens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    /* Poscionamento */
+    position: absolute;
+
+    /* Estlizando */
+    color: white;
+    font-size: 7em;
+    margin-bottom: 15%;
+    filter: drop-shadow(4px 0px 9px #000000)
+}
+
+video{
+    width: 100%;
+}
