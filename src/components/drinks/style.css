@@ -1,45 +1,48 @@
 .containerDrinks{
-    display: flex;
-    padding: 2% 5%;
-}
-
-.drinks{
-    /* Posicionando Itens */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    /* Estilizando */
-    background-color: black;
-    color: white;    
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.562);
-    cursor: pointer;
-
-    /* Posicionamento */
-    width: 26%;
-    height: 30%;
-    padding: 1%;
-
-    /* Tempo do delay da animação */
-    transition-duration: 0.6s;
-}
-
-.drinks img{
     width: 90%;
-    height: 250px;
-    filter: brightness(120%);
-    filter: contrast(108%);
-    filter: saturate(201%);
-    border-radius: 5px;
+    margin-left: 5%;
+    margin-bottom: 10%;
 }
 
-.drinks p{
-    margin-top: 5%;
-    font-size: 2em;
+.button__bar {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+  
+.button__bar li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0;
 }
 
-.drinks:hover{
-    transform: scale(1.08);
+.button__bar li button {
+    border: none;
+    background: #ffffff1a;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 7.5px;
+}
+
+.button__bar li.slick-active button {
+    background-color: var(--branco);
+}
+
+.button__bar li button:hover{
+    background: var(--roxo);
+    outline: 0;
+}
+
+.slick-slide img {
+    border: 5px solid #fff;
+    display: block;
+    margin: auto;
 }

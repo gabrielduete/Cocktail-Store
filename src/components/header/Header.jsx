@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import { RiShoppingCart2Fill, RiShoppingCart2Line } from "react-icons/ri";
+import { RiHeart3Fill, RiShoppingCart2Fill, RiShoppingCart2Line } from "react-icons/ri";
 
 function Header(){
     return (
@@ -14,7 +14,10 @@ function Header(){
             </ul>
 
             {/* <RiShoppingCart2Fill /> */}
-            <RiShoppingCart2Line className = 'iconStore'/>
+            <div className = 'storeLove'>
+                <RiHeart3Fill className = 'heart'/>
+                <RiShoppingCart2Line className = 'store' />
+            </div>
         </header>
     )
 }

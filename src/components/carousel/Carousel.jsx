@@ -12,7 +12,7 @@ import { Carousel } from 'react-responsive-carousel';
 function CarouselImgs(){
     return (
         <div className = 'containerCarousel'>
-            <h2>The best cocktail shop in the world!</h2>
+            <h2>The best <span>cocktail</span> shop in the world!</h2>
             <Carousel 
                 infiniteLoop = {true}
                 interval = {1500}

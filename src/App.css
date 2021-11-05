@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+:root{
+  --roxo: rgb(160, 99, 201);
+  --branco: rgb(255, 255, 255);
+  --preto: rgb(0, 0, 0);
+}
 
 body{
   background: rgb(0,0,0);

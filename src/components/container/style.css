@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
 body{
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(31,30,31,1) 100%);
+  background: var(--preto);
+  background: linear-gradient(180deg, var(--preto) 0%, var(--preto) 35%, rgba(31,30,31,1) 100%);
 }
 
 *{

@@ -14,7 +14,7 @@ function ContainerComponents(){
             <CarouselImgs />
             <Main />
             <Footer />
-      </div>
+        </div>
     )   
 }
 

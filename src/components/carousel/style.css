@@ -2,16 +2,23 @@
     /* Posicionamento */
     width: 100%;
     margin-top: 5%;
-    color: white;
+    color: var(--branco);
 }
 
 h2{
+    /* Posicionamento e tamanho da fonte */
     margin-left: 1%;
     margin-bottom: 1%;
     font-size: 2.5em;
 }
 
 img{
+    /* Arrumando Altura e Filtro de saturação */
     height: 500px;
     filter: saturate(110%);
+}
+
+span{
+    /* Etliziando */
+    color: var(--roxo);
 }
