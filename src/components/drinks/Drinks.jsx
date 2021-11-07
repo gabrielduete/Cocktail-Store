@@ -46,7 +46,7 @@ function Drinks(props){
       return (
         <section className = 'containerDrinks'>
           <Slider {...settings}>
-                    {props.drinks.map(drink => <Drink drinkName = {drink.strDrink} drinkImg={drink.strDrinkThumb} />)}
+            {props.drinks.map(drink => <Drink drinkName = {drink.strDrink} drinkImg={drink.strDrinkThumb} />)}
           </Slider>
         </section>
       )
