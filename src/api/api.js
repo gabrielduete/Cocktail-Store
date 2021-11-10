@@ -10,4 +10,4 @@ export const getCocktails = () => {
 	)
 }
 
-module.export = { getCocktails }
+module.export = { getCocktails, getMap }
