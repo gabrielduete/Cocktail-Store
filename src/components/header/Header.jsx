@@ -1,11 +1,12 @@
 import React from 'react'
 import './style.css'
+import Icone from '../../assets/img/iconByFreepik.png'
 import { RiHeart3Fill, RiShoppingCart2Fill, RiShoppingCart2Line } from "react-icons/ri";
 
 function Header(){
     return (
         <header>
-            <p>icone</p>
+            <img src = {Icone} alt = 'iconHeader' />
 
             <ul>
                 <li>Home</li>

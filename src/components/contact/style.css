@@ -3,3 +3,17 @@
     margin-left: 2%;
     font-size: 1.6rem;
 }
+
+.containerM{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3% 0%;
+}
+
+.containerM p{
+    margin-bottom: 10%;
+    color: var(--branco);
+    font-size: 1.3rem;
+}

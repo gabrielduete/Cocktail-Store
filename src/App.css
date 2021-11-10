@@ -23,3 +23,15 @@ body{
 span{
   color: var(--roxo);
 }
+
+.leaflet-container {
+	width: 35%;
+	height: 400px;
+	border-radius: 8px;;
+	box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.514);
+}
+
+.leaflet-marker-icon .leaflet-zoom-animated .leaflet-interactive{
+  background-color: red;
+  color: red;
+}
