@@ -11,7 +11,7 @@ function Contact(){
             <p className = 'pContact'>Localization</p>
             
             <div className = 'containerM'>
-                <p className = 'spanContact'>Yes, our drinks are made at the bottom of the ocean.</p>
+                <p>Yeah, our drinks are made at the deep ocean.</p>
                 <Mapp />
             </div>
 

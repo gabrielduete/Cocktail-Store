@@ -18,23 +18,40 @@
 }
   
 .drinks img{
-  width: 60%;
-  height: 200px;
+  /* Efeitos */
   filter: brightness(120%);
   filter: contrast(108%);
   filter: saturate(201%);
+
+  /* Estilizando */
+  width: 60%;
+  height: 200px;
   border-radius: 5px;
+  border: none;
   box-shadow: 2px 2px 5px 5px var(--roxo);
 }
 
 .drinks p{
+  /* Estilizando */
   margin-top: 5%;
   font-size: 1.5em;
   padding: 5%;
   text-align: center;
 }
 
-.drinks:hover{
+.drinks:hover, .heart:hover, .store:hover{
   transform: scale(1.08);
-  filter: blur(4px);
+}
+
+.containerButtons{
+  position: absolute;
+  display: flex;
+  z-index: 100;
+  font-size: 2.5em;
+  transition-duration: 0.6s;
+  color: var(--branco);
+}
+
+.heart, .store{
+  cursor: pointer;
 }

@@ -17,7 +17,7 @@ function Mapp(){
 
             <Marker position = {[-30, -140]}>
                 <Popup>
-                    <label>Yes, our drinks are made at the bottom of the ocean.</label>
+                    <label>Yeah, our drinks are made at the deep ocean.</label>
                 </Popup>
             </Marker>
         </MapContainer>
