@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import Drink from '../drink/Drink'
 import Slider from "react-slick"
@@ -41,6 +41,17 @@ function Drinks(props){
             }
           }
         ]
+      }
+
+      // Configuring Function to add Fav drink
+      const [arrayFavs, setArrayFavs] = useState([])
+      let arrayInitial = []
+
+      const handleFav = drink => {
+        arrayInitial.push()
+        setArrayFavs({
+
+        })
       }
       
       return (
