@@ -2,23 +2,20 @@ import React from 'react'
 import './App.css'
 import ContainerComponents from './components/container/ContainerComponents'
 import PageFavs from './Pages/pageFavs/PageFavs'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App(){
   return (
     <Router>
 
-    <Switch>
+      <Routes>
 
-      <Route exact path="/">
-        <ContainerComponents />
-      </Route>
+        <Route path="/" exact element = {<ContainerComponents />} />
 
-      <Route path="/favs">
-        <PageFavs />
-      </Route>
+        <Route path="/favs" element = {<PageFavs />} />
 
-    </Switch>
+      </Routes>
+
   </Router>
   )
 }
