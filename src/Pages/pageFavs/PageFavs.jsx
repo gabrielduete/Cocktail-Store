@@ -1,0 +1,9 @@
+import React from 'react'
+
+function Favs(){
+    return(
+        <h1>Drinks Favoritados</h1>
+    )
+}
+
+export default Favs

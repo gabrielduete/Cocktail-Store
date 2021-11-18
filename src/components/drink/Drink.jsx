@@ -41,7 +41,7 @@ function Drink(props){
                 <div className = 'containerButtons' style = {styleButtons}>
                     <RiHeart3Fill
                         className = 'heart' 
-                        onClick = {() => props.handleFav(props.drinkImg)}
+                        onClick = {() => props.handleFav(props.drinkImg, props.drinkName)}
                     />
                     
                     <RiShoppingCart2Line className = 'store' />

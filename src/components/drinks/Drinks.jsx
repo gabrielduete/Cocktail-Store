@@ -45,9 +45,10 @@ function Drinks(props){
 
       const [arrayFavs, setArrayFavs] = useState([])
 
-      const handleFav = drinkImg => {
+      const handleFav = (drinkImg, nameDrink) => {
           setArrayFavs([...arrayFavs, {
-              srcImg: drinkImg
+              srcImg: drinkImg,
+              nameDrink: nameDrink
           }])
       }
   
@@ -56,7 +57,7 @@ function Drinks(props){
       return (
         <section className = 'containerDrinks'>
           <Slider {...settings}>
-            
+
             {props.drinks.map(
               drink => <Drink
                 drinkName = {drink.strDrink} 
