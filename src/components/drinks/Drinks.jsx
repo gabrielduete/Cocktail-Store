@@ -43,21 +43,27 @@ function Drinks(props){
         ]
       }
 
-      // Configuring Function to add Fav drink
       const [arrayFavs, setArrayFavs] = useState([])
-      let arrayInitial = []
 
-      const handleFav = drink => {
-        arrayInitial.push()
-        setArrayFavs({
-
-        })
+      const handleFav = drinkImg => {
+          setArrayFavs([...arrayFavs, {
+              srcImg: drinkImg
+          }])
       }
+  
+      console.log(arrayFavs)
       
       return (
         <section className = 'containerDrinks'>
           <Slider {...settings}>
-            {props.drinks.map(drink => <Drink drinkName = {drink.strDrink} drinkImg={drink.strDrinkThumb} />)}
+            
+            {props.drinks.map(
+              drink => <Drink
+                drinkName = {drink.strDrink} 
+                drinkImg = {drink.strDrinkThumb} 
+                handleFav = {handleFav}/>
+              )}
+
           </Slider>
         </section>
       )
