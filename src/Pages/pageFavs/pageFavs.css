@@ -1,0 +1,19 @@
+.containerFavs-bg{
+    width: 100%;
+    height: 100vh;
+    color: var(--branco)
+}
+
+.containerFavs{
+    margin: 3%;
+    height: 30%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerFavs h1{
+    font-size: 3em;
+    align-self: flex-end;
+}

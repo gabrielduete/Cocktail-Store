@@ -7,13 +7,16 @@ import Main from '../main/Main'
 import Contact from '../contact/contact'
 import Footer from '../footer/Footer'
 
-function ContainerComponents(){
+function ContainerComponents(props){
     return (
         <div>
             <Header />
             <Title />
             <CarouselImgs />
-            <Main />
+            <Main
+                handleFav = {props.handleFav} 
+                arrayFavs = {props.arrayFavs}
+            />
             <Contact />
             <Footer />
         </div>

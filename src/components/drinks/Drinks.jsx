@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './style.css'
 import Drink from '../drink/Drink'
 import Slider from "react-slick"
@@ -42,17 +42,7 @@ function Drinks(props){
           }
         ]
       }
-
-      const [arrayFavs, setArrayFavs] = useState([])
-
-      const handleFav = (drinkImg, nameDrink) => {
-          setArrayFavs([...arrayFavs, {
-              srcImg: drinkImg,
-              nameDrink: nameDrink
-          }])
-      }
   
-      console.log(arrayFavs)
       
       return (
         <section className = 'containerDrinks'>
@@ -62,7 +52,7 @@ function Drinks(props){
               drink => <Drink
                 drinkName = {drink.strDrink} 
                 drinkImg = {drink.strDrinkThumb} 
-                handleFav = {handleFav}/>
+                handleFav = {props.handleFav}/>
               )}
 
           </Slider>

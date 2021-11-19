@@ -3,7 +3,7 @@ import './style.css'
 import { getCocktails } from '../../api/api'
 import Drinks from '../drinks/Drinks'
 
-function Main(){
+function Main(props){
 
     const [drinks, setDrinks] = useState([])
 
@@ -21,7 +21,11 @@ function Main(){
     return (
         <main>
             <h3>Choose your <span>cocktails</span></h3>
-            <Drinks drinks={drinks}/>
+            <Drinks 
+                drinks={drinks} 
+                handleFav = {props.handleFav} 
+                arrayFavs = {props.arrayFavs}
+            />
         </main>
     )
 }

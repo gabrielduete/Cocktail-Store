@@ -1,9 +1,26 @@
 import React from 'react'
-import './style.css'
+import './pageFavs.css'
 
-function Favs(){
+function Favs(props){
+
+    console.log(props.arrayFavs)
+
     return(
-        <h1>Drinks Favoritados</h1>
+        <div className = 'containerFavs-bg'>
+            <section className = 'containerFavs'>
+                <div>
+                    <h1>Drinks Favoritados</h1>
+                </div>
+
+                <div className = 'favDrinks'>
+                    <div class = 'favDrink'>
+                        <img src= {props.arrayFavs.srcImg} alt="image_cocktail" />
+                        <p>{props.cu}</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
     )
 }
 
