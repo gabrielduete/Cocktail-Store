@@ -15,6 +15,10 @@ function App(){
       }])
   }
 
+  // const handleRemoveFav = (drinkImg, nameDrink){
+  //   arrayFavs.
+  // }
+
   console.log(arrayFavs)
 
   return (

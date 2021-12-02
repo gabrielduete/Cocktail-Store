@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import Icone from '../../assets/img/iconByFreepik.png'
-import { RiHeart3Fill, RiShoppingCart2Fill, RiShoppingCart2Line } from "react-icons/ri";
+import { RiHeart3Fill, RiShoppingCart2Line } from "react-icons/ri";
 
 function Header(){
     return (

@@ -12,8 +12,12 @@ function Drink(props){
         display: 'none'
     })
 
+    const [styleHeart, setStyleHeart] = useState(false)
+
+    console.log(props.arrayFavs)
+
     return (
-        <>
+        <div>
             <div 
                 className = 'drinks'
 
@@ -41,7 +45,16 @@ function Drink(props){
                 <div className = 'containerButtons' style = {styleButtons}>
                     <RiHeart3Fill
                         className = 'heart' 
-                        onClick = {() => props.handleFav(props.drinkImg, props.drinkName)}
+                        onClick = {() => 
+                            props.handleFav(props.drinkImg, props.drinkName)
+                        }
+
+                        onClick = {() => setStyleHeart(!styleHeart)}
+                        
+                        style = {
+                            styleHeart ? {color: 'var(--roxo)'} : {color: 'var(--branco)'}
+                        }
+
                     />
                     
                     <RiShoppingCart2Line className = 'store' />
@@ -49,8 +62,9 @@ function Drink(props){
 
                 <img src= {props.drinkImg} alt="imagemCocktail" style = {styleImgs}/>
                 <p style = {styleImgs}> {props.drinkName} </p>
+
             </div>
-        </>
+        </div>
     )
 }
 
