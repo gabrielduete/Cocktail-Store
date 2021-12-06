@@ -14,7 +14,7 @@ function ContainerComponents(props){
             <Title />
             <CarouselImgs />
             <Main
-                handleFav = {props.handleFav} 
+                handleFav = {props.handleFav}
                 arrayFavs = {props.arrayFavs}
             />
             <Contact />

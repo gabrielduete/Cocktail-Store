@@ -52,7 +52,9 @@ function Drinks(props){
               drink => <Drink
                 drinkName = {drink.strDrink} 
                 drinkImg = {drink.strDrinkThumb} 
-                handleFav = {props.handleFav}/>
+                handleFav = {props.handleFav}
+                arrayFavs = {props.arrayFavs}
+              />
               )}
 
           </Slider>

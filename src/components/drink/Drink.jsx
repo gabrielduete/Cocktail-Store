@@ -14,11 +14,16 @@ function Drink(props){
 
     const [styleHeart, setStyleHeart] = useState(false)
 
+    const clickHeart = () => {
+        props.handleFav(props.drinkImg, props.drinkName)
+        setStyleHeart(!styleHeart)
+    }
+
     console.log(props.arrayFavs)
 
     return (
         <div>
-            <div 
+            <div
                 className = 'drinks'
 
                 onMouseEnter = {() => {
@@ -46,15 +51,11 @@ function Drink(props){
                     <RiHeart3Fill
                         className = 'heart' 
                         onClick = {() => 
-                            props.handleFav(props.drinkImg, props.drinkName)
+                            clickHeart()
                         }
-
-                        onClick = {() => setStyleHeart(!styleHeart)}
-                        
                         style = {
                             styleHeart ? {color: 'var(--roxo)'} : {color: 'var(--branco)'}
                         }
-
                     />
                     
                     <RiShoppingCart2Line className = 'store' />

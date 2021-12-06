@@ -6,47 +6,44 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App(){
 
-  const [arrayFavs, setArrayFavs] = useState([])
+  const [arrayFavs, setArrayFavs] = useState([{
+    srcImg: '',
+    nameDrink: ''
+  }])
 
-  const handleFav = (drinkImg, nameDrink) => {
+  const handleFav = (drinkImg, drinkName) => { 
+    if (arrayFavs.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
       setArrayFavs([...arrayFavs, {
-          srcImg: drinkImg,
-          nameDrink: nameDrink
+        srcImg: drinkImg,
+        nameDrink: drinkName
       }])
+    }else{
+      console.log('ja tem essa porra')
+    }
   }
-
-  // const handleRemoveFav = (drinkImg, nameDrink){
-  //   arrayFavs.
-  // }
-
-  console.log(arrayFavs)
 
   return (
     <Router>
-
       <Routes>
-
         <Route 
           path="/" 
           exact 
           element = {
             <ContainerComponents 
-            handleFav = {handleFav} 
+            handleFav = {handleFav}
             arrayFavs = {arrayFavs}/>
           } 
         />
 
         <Route 
           path="/favs" 
-          exact 
+          exact
           element = {
             <PageFavs 
               arrayFavs = {arrayFavs}/>
           }
         />
-
       </Routes>
-
   </Router>
   )
 }

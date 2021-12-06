@@ -22,7 +22,7 @@ function Main(props){
         <main>
             <h3>Choose your <span>cocktails</span></h3>
             <Drinks 
-                drinks={drinks} 
+                drinks={drinks}
                 handleFav = {props.handleFav}
                 arrayFavs = {props.arrayFavs}
             />
