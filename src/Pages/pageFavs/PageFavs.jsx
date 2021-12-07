@@ -13,7 +13,7 @@ function Favs(props){
                 </div>
 
                 <div className = 'favDrinks'>
-                    <div class = 'favDrink'>
+                    <div className = 'favDrink'>
                         <img src= {props.arrayFavs.srcImg} alt="image_cocktail" />
                         <p>{props.cu}</p>
                     </div>

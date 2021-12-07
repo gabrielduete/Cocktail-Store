@@ -1,9 +1,10 @@
 import React from 'react'
 import './style.css'
 import Icone from '../../assets/img/iconByFreepik.png'
-import { RiHeart3Fill, RiShoppingCart2Line } from "react-icons/ri";
+import { RiHeart3Fill, RiShoppingCart2Line } from "react-icons/ri"
+import { Link } from "react-router-dom"
 
-function Header(){
+function Header(props){
     return (
         <header>
             <img src = {Icone} alt = 'iconHeader' />
@@ -14,9 +15,16 @@ function Header(){
                 <li>Contact us</li>
             </ul>
 
-            {/* <RiShoppingCart2Fill /> */}
             <div className = 'storeLove'>
-                <RiHeart3Fill className = 'heart'/>
+                <i>
+                    <Link 
+                        to = '/favs' 
+                        arrayFavs = {props.arrayFavs}
+                        className = 'link'
+                    > 
+                        <RiHeart3Fill className = 'heart'/> 
+                    </Link>
+                </i>
                 <RiShoppingCart2Line className = 'store' />
             </div>
         </header>

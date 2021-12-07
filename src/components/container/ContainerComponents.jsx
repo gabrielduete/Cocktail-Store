@@ -10,7 +10,9 @@ import Footer from '../footer/Footer'
 function ContainerComponents(props){
     return (
         <div>
-            <Header />
+            <Header 
+                arrayFavs = {props.arrayFavs}
+            />
             <Title />
             <CarouselImgs />
             <Main

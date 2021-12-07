@@ -1,17 +1,12 @@
 header{
-    /* Estilizando */
     width: 100%;
     height: 4.5em;
     background-color: var(--preto);
     font-size: 1.1em;
     color: var(--branco);
-
-    /* Alinhando itens */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    /* Posicionamento */
     position: sticky;
     top: 0;
     z-index: 2000;
@@ -23,15 +18,10 @@ header img{
 }
 
 li{
-    /* Estlizando */
     cursor: pointer;
     list-style: none;
-
-    /* Posicionando */
     display: inline-block;
     margin: 1% 5px;
-
-    /* Delay da animação hover */
     transition-duration: 0.60s;
 }
 
@@ -39,33 +29,35 @@ li:hover, .store:hover{
     color: gray;
 }
 
+
 .storeLove{
-    /* Estilizando */
     font-size: 1.3em;
     cursor: pointer;
-    /* background-color: red; */
     width: 10%;
-
-    /* Posicionando Itens*/
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-
-    /* Posicionando */
     margin-left: 40%;
 }
 
+.link{
+    color: white;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .store{
-    /* Delay da animação hover */
     transition-duration: 0.60s;
+    margin-left: 10%;
 }
 
 .heart{
-    margin-right: 15%;
-
-    /* Delay da animação hover */
     transition-duration: 0.60s;
 }
+
 
 .heart:hover{
     color: var(--roxo);
