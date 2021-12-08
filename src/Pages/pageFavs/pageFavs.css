@@ -24,8 +24,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 200px;
+    height: 200px;
     margin-top: 50%;
     margin-left: 20%;
+    word-wrap:initial;
 }
 
 .favDrink img{
@@ -42,4 +45,5 @@
 .favDrink p{
     margin-top: 10%;
     font-size: 1.3em;
+    overflow: hidden;
 }

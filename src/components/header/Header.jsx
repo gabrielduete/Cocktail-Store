@@ -24,8 +24,14 @@ function Header(props){
                     > 
                         <RiHeart3Fill className = 'heart'/> 
                     </Link>
+
+                    <Link
+                        to = '/shop'
+                        className = 'link'
+                    >
+                        <RiShoppingCart2Line className = 'store' />
+                    </Link>
                 </i>
-                <RiShoppingCart2Line className = 'store' />
             </div>
         </header>
     )

@@ -3,13 +3,10 @@ import FavsDrinks from './FavsDrinks'
 import './pageFavs.css'
 
 function Favs(props){
-
-    console.log(props.arrayFavs)
-
     return(
         <div className = 'containerFavs-bg'>
             <section className = 'containerFavs'>
-                    <h1>Drinks Favoritados</h1>
+                    <h1>Favorite Drinks</h1>
 
                     <div className = 'favDrinks'>
                         {

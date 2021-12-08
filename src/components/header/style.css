@@ -29,6 +29,9 @@ li:hover, .store:hover{
     color: gray;
 }
 
+i{
+    display: flex;
+}
 
 .storeLove{
     font-size: 1.3em;

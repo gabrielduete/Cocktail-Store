@@ -13,6 +13,7 @@ function Title(){
                 steps={['Cocktail Store!', 3000, '', 1000]}
                 loop={Infinity}
                 wrapper="h1"
+                className = 'tittle-Tittle'
             />
         </div>
     )
