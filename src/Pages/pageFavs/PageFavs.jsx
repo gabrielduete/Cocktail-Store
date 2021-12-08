@@ -1,4 +1,5 @@
 import React from 'react'
+import FavsDrinks from './FavsDrinks'
 import './pageFavs.css'
 
 function Favs(props){
@@ -8,17 +9,17 @@ function Favs(props){
     return(
         <div className = 'containerFavs-bg'>
             <section className = 'containerFavs'>
-                <div>
                     <h1>Drinks Favoritados</h1>
-                </div>
 
-                <div className = 'favDrinks'>
-                    <div className = 'favDrink'>
-                        <img src= {props.arrayFavs.srcImg} alt="image_cocktail" />
-                        <p>{props.cu}</p>
+                    <div className = 'favDrinks'>
+                        {
+                            props.arrayFavs.map( el => <FavsDrinks
+                                                            nameDrink = {el.nameDrink}
+                                                            image = {el.srcImg}
+                                                        />
+                            )
+                        }
                     </div>
-                </div>
-
             </section>
         </div>
     )

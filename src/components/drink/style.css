@@ -18,12 +18,9 @@
 }
   
 .drinks img{
-  /* Efeitos */
   filter: brightness(120%);
   filter: contrast(108%);
   filter: saturate(201%);
-
-  /* Estilizando */
   width: 60%;
   height: 200px;
   border-radius: 5px;
@@ -32,7 +29,6 @@
 }
 
 .drinks p{
-  /* Estilizando */
   margin-top: 5%;
   font-size: 1.5em;
   padding: 5%;

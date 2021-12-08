@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 function App(){
 
   const [arrayFavs, setArrayFavs] = useState([{
-    srcImg: '',
-    nameDrink: ''
+    srcImg: "https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg",
+    nameDrink: 'MEU CU'
   }])
 
   const handleFav = (drinkImg, drinkName) => { 
