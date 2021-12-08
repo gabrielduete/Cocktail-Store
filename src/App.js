@@ -6,10 +6,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App(){
 
-  const [arrayFavs, setArrayFavs] = useState([{
+  const [arrayFavs, setArrayFavs] = useState([
+    {
     srcImg: "https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg",
-    nameDrink: 'MEU CU'
-  }])
+    nameDrink: 'Teste'
+    }
+  
+  ])
 
   const handleFav = (drinkImg, drinkName) => { 
     if (arrayFavs.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
@@ -17,8 +20,6 @@ function App(){
         srcImg: drinkImg,
         nameDrink: drinkName
       }])
-    }else{
-      console.log('ja tem essa porra')
     }
   }
 

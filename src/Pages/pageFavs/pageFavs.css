@@ -1,17 +1,13 @@
 .containerFavs-bg{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     color: var(--branco)
 }
 
 .containerFavs{
     margin: 3%;
-    height: 100%;
-    /* width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: red; */
+    height: 100vh;
+    width: 90%;
 }
 
 .containerFavs h1{
@@ -29,6 +25,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 50%;
+    margin-left: 20%;
 }
 
 .favDrink img{
