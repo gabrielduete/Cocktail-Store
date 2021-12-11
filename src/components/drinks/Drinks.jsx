@@ -50,10 +50,12 @@ function Drinks(props){
 
             {props.drinks.map(
               drink => <Drink
-                drinkName = {drink.strDrink} 
+                drinkName = {drink.strDrink}
                 drinkImg = {drink.strDrinkThumb} 
                 handleFav = {props.handleFav}
                 arrayFavs = {props.arrayFavs}
+                handleShop = {props.handleShop}
+                arrayShop = {props.arrayShop}
               />
               )}
 

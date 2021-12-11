@@ -25,6 +25,9 @@ function Main(props){
                 drinks={drinks}
                 handleFav = {props.handleFav}
                 arrayFavs = {props.arrayFavs}
+
+                handleShop = {props.handleShop}
+                arrayShop = {props.arrayShop}
             />
         </main>
     )

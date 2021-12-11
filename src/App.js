@@ -28,6 +28,15 @@ function App(){
     nameDrink: 'Teste'
   }])
 
+  const handleShop = (drinkImg, drinkName) => { 
+    if (arrayShop.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
+      setArrayShop([...arrayShop, {
+        srcImg: drinkImg,
+        nameDrink: drinkName
+      }])
+    }
+  }
+
   return (
     <Router>
       <Routes>
@@ -37,7 +46,12 @@ function App(){
           element = {
             <ContainerComponents 
             handleFav = {handleFav}
-            arrayFavs = {arrayFavs}/>
+            arrayFavs = {arrayFavs}
+            
+            handleShop = {handleShop}
+            arrayShop = {arrayShop}
+
+            />
           } 
         />
 

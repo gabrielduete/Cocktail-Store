@@ -19,7 +19,15 @@ function Drink(props){
         setStyleHeart(!styleHeart)
     }
 
+    const [styleStore, setStyleStore] = useState(false)
+
+    const clickStore = () => {
+        props.handleShop(props.drinkImg, props.drinkName)
+        setStyleStore(!styleStore)
+    }
+
     console.log(props.arrayFavs)
+    console.log(props.arrayShop)
 
     return (
         <div>
@@ -58,7 +66,16 @@ function Drink(props){
                         }
                     />
                     
-                    <RiShoppingCart2Line className = 'store' />
+                    <RiShoppingCart2Line 
+                        className = 'store' 
+                        onClick = {() => 
+                            clickStore()
+                        }
+
+                        style = {
+                            setStyleStore ? {color: 'var(--branco)'} : {color: 'gray'}
+                        }
+                    />
                 </div>
 
                 <img src= {props.drinkImg} alt="imagemCocktail" style = {styleImgs}/>

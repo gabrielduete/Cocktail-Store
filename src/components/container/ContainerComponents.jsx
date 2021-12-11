@@ -18,6 +18,9 @@ function ContainerComponents(props){
             <Main
                 handleFav = {props.handleFav}
                 arrayFavs = {props.arrayFavs}
+
+                handleShop = {props.handleShop}
+                arrayShop = {props.arrayShop}
             />
             <Contact />
             <Footer />
