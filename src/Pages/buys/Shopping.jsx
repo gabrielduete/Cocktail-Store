@@ -1,6 +1,7 @@
 import React from 'react'
 import DrinkShop from './DrinksShop'
 import './shopping.css'
+import ButtonReturn from '../../components/buttonReturn/ButtonReturn'
 
 function Shopping(props){
 
@@ -22,6 +23,7 @@ function Shopping(props){
                     }
                 </div>
             </div>
+            <ButtonReturn />
         </div>
     )
 }

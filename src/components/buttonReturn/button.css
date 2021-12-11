@@ -1,0 +1,17 @@
+button{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--branco);
+    font-size: 1.6em;
+    text-align: center;
+    color: var(--preto);
+    transition-duration: 0.80s;
+}
+
+button:hover{
+    background-color: var(--roxo);
+    color: var(--branco);
+}
