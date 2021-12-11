@@ -14,12 +14,12 @@ function Drink(props){
 
     const [styleHeart, setStyleHeart] = useState(false)
 
+    const [styleStore, setStyleStore] = useState(false)
+
     const clickHeart = () => {
         props.handleFav(props.drinkImg, props.drinkName)
         setStyleHeart(!styleHeart)
     }
-
-    const [styleStore, setStyleStore] = useState(false)
 
     const clickStore = () => {
         props.handleShop(props.drinkImg, props.drinkName)
@@ -73,7 +73,7 @@ function Drink(props){
                         }
 
                         style = {
-                            setStyleStore ? {color: 'var(--branco)'} : {color: 'gray'}
+                            styleStore ? {color: 'var(--roxo)'} : {color: 'var(--branco)'}
                         }
                     />
                 </div>

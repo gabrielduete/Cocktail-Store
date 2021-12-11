@@ -1,19 +1,12 @@
 .drinks{
-  /* Posicionando Itens */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* Estilizando */
   background: none;
   color: var(--branco);
   cursor: pointer;
-
-  /* Posicionamento */
   margin-top: 10%;
-
-  /* Tempo do delay da animação */
   transition-duration: 0.6s;
 }
   

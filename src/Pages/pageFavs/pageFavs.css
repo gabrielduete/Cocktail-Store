@@ -6,12 +6,13 @@
 
 .containerFavs{
     margin: 3%;
-    height: 100vh;
+    height: 100%;
     width: 90%;
 }
 
 .containerFavs h1{
     font-size: 3em;
+    margin-bottom: 2%;
 }
 
 .favDrinks{

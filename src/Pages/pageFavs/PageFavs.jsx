@@ -1,5 +1,6 @@
 import React from 'react'
 import FavsDrinks from './FavsDrinks'
+import ButtonReturn from '../../components/buttonReturn/ButtonReturn'
 import './pageFavs.css'
 
 function Favs(props){
@@ -7,7 +8,7 @@ function Favs(props){
         <div className = 'containerFavs-bg'>
             <section className = 'containerFavs'>
                     <h1>Favorite Drinks</h1>
-
+                    <ButtonReturn />
                     <div className = 'favDrinks'>
                         {
                             props.arrayFavs.map( el => <FavsDrinks
