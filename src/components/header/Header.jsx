@@ -28,6 +28,7 @@ function Header(props){
                     <Link
                         to = '/shop'
                         className = 'link'
+                        arrayShop = {props.arrayShop}
                     >
                         <RiShoppingCart2Line className = 'store' />
                     </Link>

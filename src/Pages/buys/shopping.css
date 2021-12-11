@@ -3,7 +3,7 @@
     color: var(--branco);
     background: linear-gradient(180deg, var(--preto) 0%, var(--preto) 35%, rgba(31,30,31,1) 100%);    
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .containerShop-bg{

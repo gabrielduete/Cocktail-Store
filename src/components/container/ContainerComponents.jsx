@@ -12,6 +12,7 @@ function ContainerComponents(props){
         <div>
             <Header 
                 arrayFavs = {props.arrayFavs}
+                arrayShop = {props.arrayShop}
             />
             <Title />
             <CarouselImgs />

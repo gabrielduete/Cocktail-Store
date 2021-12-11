@@ -69,7 +69,7 @@ function App(){
           exact
           element = {
             <Shopping
-            
+              arrayShop = {arrayShop}
             />
           }
         />
