@@ -8,23 +8,28 @@ function Shopping(props){
     console.log(props.arrayShop)
 
     return (
-        <div className = 'container-bg'>
-            <div className = 'containerShop-bg'>
-                <h1 className = 'tittle-Shop'>Shopping</h1>
-                <p><span>PROMOTION:</span> All drinks for $59.99!</p>
-                <div className = 'containerShop-drinks'>
-                    {
-                        props.arrayShop.map( el => 
-                            <DrinkShop 
-                                image = {el.srcImg}
-                                nameDrink = {el.nameDrink}
-                            />
-                        )
-                    }
+        <section className = 'container-bg'>
+            <div className = 'container-Shop-all'>
+                <div className = 'containerShop-bg'>
+                    <h1 className = 'tittle-Shop'>Shopping</h1>
+                    <p><span>PROMOTION:</span> All drinks for $59.99!</p>
+                    <div className = 'containerShop-drinks'>
+                        {
+                            props.arrayShop.map( el => 
+                                <DrinkShop 
+                                    image = {el.srcImg}
+                                    nameDrink = {el.nameDrink}
+                                />
+                            )
+                        }
+                    </div>
+                </div>
+                <div className = 'buttons'>
+                    <ButtonReturn />
+                    <button className = 'buttonBuy'>Buy</button>
                 </div>
             </div>
-            <ButtonReturn />
-        </div>
+        </section>
     )
 }
 

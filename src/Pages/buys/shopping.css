@@ -4,12 +4,18 @@
     background: linear-gradient(180deg, var(--preto) 0%, var(--preto) 35%, rgba(31,30,31,1) 100%);    
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .containerShop-bg{
     margin: 3%;
-    height: 100vh;
-    width: 90%;
+    width: 100%;
+}
+
+.container-Shop-all{
+    width: 40%;
 }
 
 .containerShop-bg p{
@@ -25,7 +31,7 @@
 
 .containerShop-drinks{
     border: 2px inset rgb(218, 95, 235);
-    width: 40%;
+    width: 100%;
     height: 500px;
     overflow: auto;
     overflow-x: hidden;
@@ -64,4 +70,19 @@
   background-color: var(--roxo);   
   border-radius: 20px;       
   border: 3px solid rgb(255, 255, 255);  
+}
+
+.buttons{
+    margin: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonBuy{
+    font-size: 1.3em;
+}
+
+hr{
+    border-color: rgb(43, 42, 42);
 }

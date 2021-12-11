@@ -8,7 +8,7 @@ button{
     font-size: 1.6em;
     text-align: center;
     color: var(--preto);
-    transition-duration: 0.80s;
+    transition-duration: 0.60s;
 }
 
 button:hover{

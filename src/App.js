@@ -26,25 +26,7 @@ function App(){
   const [arrayShop, setArrayShop] = useState([{
     srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
     nameDrink: 'Teste'
-  },{
-    srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
-    nameDrink: 'Teste'
-  },{
-    srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
-    nameDrink: 'Teste'
-  },{
-    srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
-    nameDrink: 'Teste'
-  },{
-    srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
-    nameDrink: 'Teste'
-  },{
-    srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
-    nameDrink: 'Teste'
-  },{
-    srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
-    nameDrink: 'Teste'
-  },])
+  }])
 
   const handleShop = (drinkImg, drinkName) => { 
     if (arrayShop.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
