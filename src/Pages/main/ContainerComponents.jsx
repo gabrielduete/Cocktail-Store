@@ -1,11 +1,11 @@
 import React from 'react'
 import './style.css'
-import Header from '../header/Header'
-import Title from '../title/Title'
-import CarouselImgs from '../carousel/Carousel'
-import Main from '../main/Main'
-import Contact from '../contact/contact'
-import Footer from '../footer/Footer'
+import Header from '../../components/header/Header'
+import Title from '../../components/title/Title'
+import CarouselImgs from '../../components/carousel/Carousel'
+import Main from '../../components/main/Main'
+import Contact from '../../components/contact/contact'
+import Footer from '../../components/footer/Footer'
 
 function ContainerComponents(props){
     return (

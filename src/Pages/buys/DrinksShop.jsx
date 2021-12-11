@@ -1,10 +1,14 @@
 import React from 'react'
+import './shopping.css'
 
 function DrinkShop(props){
     return (
-            <div>
+            <div className = 'drinkShop'>
                     <img src = {props.image} alt="image_cocktail" />
-                    <p>{props.nameDrink}</p>
+                    <div className = 'drinkShop-texts'>
+                        <p>{props.nameDrink}</p>
+                        <p>$59.99</p>
+                    </div>
             </div>
     )
 }

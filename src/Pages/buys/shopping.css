@@ -3,17 +3,17 @@
     color: var(--branco);
     background: linear-gradient(180deg, var(--preto) 0%, var(--preto) 35%, rgba(31,30,31,1) 100%);    
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .containerShop-bg{
     margin: 3%;
-    height: 100%;
+    height: 100vh;
     width: 90%;
 }
 
 .containerShop-bg p{
-    font-size: 1.4em;
+    font-size: 1.8em;
     margin-bottom: 1.2%;
 }
 
@@ -24,7 +24,44 @@
 }
 
 .containerShop-drinks{
-    border: 2px dotted white;
+    border: 2px inset rgb(218, 95, 235);
     width: 40%;
     height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.drinkShop{
+    margin: 1%;
+    margin-left: 3%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+
+.drinkShop-texts{
+    margin-left: 3%;
+    font-size: 0.7em;
+    line-height: 1.3;
+}
+
+.drinkShop img{
+    max-width: 50%;
+    height: 100%;
+}
+
+.containerShop-drinks::-webkit-scrollbar {
+  width: 12px;
+}
+
+.containerShop-drinks::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+.containerShop-drinks::-webkit-scrollbar-thumb {
+  background-color: var(--roxo);   
+  border-radius: 20px;       
+  border: 3px solid rgb(255, 255, 255);  
 }
