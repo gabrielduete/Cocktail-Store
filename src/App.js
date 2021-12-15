@@ -7,17 +7,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App(){
 
-  const [arrayFavs, setArrayFavs] = useState([
-    {
-    srcImg: "",
-    nameDrink: ''
-    }
-  ])
+  const [arrayFavs, setArrayFavs] = useState([])
   
-  const [arrayShop, setArrayShop] = useState([{
-    srcImg: 'https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg',
-    nameDrink: 'Teste'
-  }])
+  const [arrayShop, setArrayShop] = useState([])
 
   const handleFav = (drinkImg, drinkName) => { 
     if (arrayFavs.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
@@ -41,7 +33,7 @@ function App(){
     <Router>
       <Routes>
         <Route 
-          path="/" 
+          path="/"
           exact 
           element = {
             <ContainerComponents 

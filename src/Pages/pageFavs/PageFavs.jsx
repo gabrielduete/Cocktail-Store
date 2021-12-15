@@ -4,22 +4,30 @@ import ButtonReturn from '../../components/buttonReturn/ButtonReturn'
 import './pageFavs.css'
 
 function Favs(props){
+
+    const marginTop = {
+        marginTop: '3%'
+    }
+
     return(
-        <div className = 'containerFavs-bg'>
-            <section className = 'containerFavs'>
-                    <h1>Favorite Drinks</h1>
-                    <ButtonReturn />
-                    <div className = 'favDrinks'>
-                        {
-                            props.arrayFavs.map( el => <FavsDrinks
-                                                            nameDrink = {el.nameDrink}
-                                                            image = {el.srcImg}
-                                                        />
-                            )
-                        }
+        <section className = 'bg-favs'>
+            <div className = 'container-Shop-all'>
+                <div className = 'containerShop-bg'>
+                        <h1>Favorite Drinks</h1>
+                        <ButtonReturn />
+                        <div style = {marginTop} className = 'containerShop-drinks'>
+                                {
+                                    props.arrayFavs.map( el => <FavsDrinks
+                                                                    nameDrink = {el.nameDrink}
+                                                                    image = {el.srcImg}
+                                                                />
+
+                                    )
+                                }
+                        </div>
                     </div>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 

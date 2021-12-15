@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DrinkShop from './DrinksShop'
 import './shopping.css'
 import ButtonReturn from '../../components/buttonReturn/ButtonReturn'
 
 function Shopping(props){
 
-    console.log(props.arrayShop)
+    const [valueT, setValueT] = useState()
+
+    const marginTop = {
+        marginTop: '3%'
+    }
 
     return (
         <section className = 'container-bg'>
@@ -16,13 +20,14 @@ function Shopping(props){
                     <div className = 'containerShop-drinks'>
                         {
                             props.arrayShop.map( el => 
-                                <DrinkShop 
+                                <DrinkShop
                                     image = {el.srcImg}
                                     nameDrink = {el.nameDrink}
                                 />
                             )
                         }
                     </div>
+                    <p style = {marginTop}>Value: {valueT}</p>
                 </div>
                 <div className = 'buttons'>
                     <ButtonReturn />
