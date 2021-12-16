@@ -6,11 +6,7 @@ import ButtonReturn from '../../components/buttonReturn/ButtonReturn'
 function Shopping(props){
 
     const [valueT, setValueT] = useState()
-
-    const marginTop = {
-        marginTop: '3%'
-    }
-
+    
     return (
         <section className = 'container-bg'>
             <div className = 'container-Shop-all'>
@@ -27,7 +23,7 @@ function Shopping(props){
                             )
                         }
                     </div>
-                    <p style = {marginTop}>Value: {valueT}</p>
+                    <p style = {{marginTop: '3%'}}>Value: {valueT}</p>
                 </div>
                 <div className = 'buttons'>
                     <ButtonReturn />
