@@ -1,15 +1,17 @@
 import React from 'react'
 import './shopping.css'
+import Remove from '../../components/remove/Remove'
 
 function DrinkShop(props){
     return (
         <>
             <div className = 'drinkShop'>
                     <img src = {props.image} alt="image_cocktail" />
-                    <div className = 'drinkShop-texts'>
-                        <p>{props.nameDrink}</p>
-                        <p>$59.99</p>
-                    </div>
+                        <div className = 'drinkShop-texts'>
+                            <p>{props.nameDrink}</p>
+                            <p>$59.99</p>
+                            <Remove />
+                        </div>
             </div>
             <hr/>
         </>

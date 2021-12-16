@@ -85,3 +85,14 @@
 hr{
     border-color: rgb(43, 42, 42);
 }
+
+.remove{
+    width: 80px;
+    height: 20px;
+    font-size: 1.4em;
+    transition-duration: 0.40s;
+}
+
+.remove:hover{
+    background-color: rgb(170, 20, 20);
+}
