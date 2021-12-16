@@ -10,7 +10,10 @@ function DrinkShop(props){
                         <div className = 'drinkShop-texts'>
                             <p>{props.nameDrink}</p>
                             <p>$59.99</p>
-                            <Remove />
+                            <Remove
+                                removeDrink = {props.removeDrink}
+                                array = {props.array}                       
+                            />
                         </div>
             </div>
             <hr/>

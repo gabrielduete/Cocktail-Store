@@ -13,6 +13,7 @@ function ContainerComponents(props){
             <Header 
                 arrayFavs = {props.arrayFavs}
                 arrayShop = {props.arrayShop}
+                removeDrink = {props.removeDrink}
             />
             <Title />
             <CarouselImgs />

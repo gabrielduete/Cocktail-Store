@@ -19,6 +19,8 @@ function Shopping(props){
                                 <DrinkShop
                                     image = {el.srcImg}
                                     nameDrink = {el.nameDrink}
+                                    removeDrink = {props.removeDrink}
+                                    array = {props.arrayShop}
                                 />
                             )
                         }

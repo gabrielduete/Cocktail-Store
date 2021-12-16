@@ -15,7 +15,8 @@ function App(){
     if (arrayFavs.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
       setArrayFavs([...arrayFavs, {
         srcImg: drinkImg,
-        nameDrink: drinkName
+        nameDrink: drinkName,
+        favorited: true,
       }])
     }
   }
@@ -29,6 +30,11 @@ function App(){
     }
   }
 
+  const removeDrink = (array, nameDrink) => {
+    let index = array.indexOf(nameDrink)
+    console.log(index)
+  }
+
   return (
     <Router>
       <Routes>
@@ -39,7 +45,7 @@ function App(){
             <ContainerComponents 
             handleFav = {handleFav}
             arrayFavs = {arrayFavs}
-            
+            removeDrink = {removeDrink}
             handleShop = {handleShop}
             arrayShop = {arrayShop}
 
@@ -52,7 +58,9 @@ function App(){
           exact
           element = {
             <PageFavs 
-              arrayFavs = {arrayFavs}/>
+              arrayFavs = {arrayFavs}
+              removeDrink = {removeDrink}
+            />
           }
         />
 
@@ -62,6 +70,7 @@ function App(){
           element = {
             <Shopping
               arrayShop = {arrayShop}
+              removeDrink = {removeDrink}
             />
           }
         />

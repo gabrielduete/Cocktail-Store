@@ -18,9 +18,10 @@ function Header(props){
             <div className = 'storeLove'>
                 <i>
                     <Link 
-                        to = '/favs' 
-                        arrayFavs = {props.arrayFavs}
+                        to = '/favs'
                         className = 'link'
+                        arrayFavs = {props.arrayFavs}
+                        removeDrink = {props.removeDrink}
                     > 
                         <RiHeart3Fill className = 'heart'/> 
                     </Link>
@@ -29,6 +30,7 @@ function Header(props){
                         to = '/shop'
                         className = 'link'
                         arrayShop = {props.arrayShop}
+                        removeDrink = {props.removeDrink}
                     >
                         <RiShoppingCart2Line className = 'store' />
                     </Link>
