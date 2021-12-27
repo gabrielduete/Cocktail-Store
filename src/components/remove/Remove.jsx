@@ -6,8 +6,8 @@ function Remove(props) {
             className='remove'
             onClick={() => {
                 for (let i in props.array) {
-                    let element = props.array[i].nameDrink.toUpperCase().toString()
-                    if (element === props.nameDrink1.toString().toUpperCase()) {
+                    let element = props.array[i].nameDrink
+                    if (element === props.nameDrink1) {
                         props.removeDrink(props.array, props.setArrayShop, props.nameDrink1)
                     }
                 }
