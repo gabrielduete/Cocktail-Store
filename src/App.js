@@ -5,14 +5,14 @@ import PageFavs from './Pages/pageFavs/PageFavs'
 import Shopping from './Pages/buys/Shopping'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
-function App(){
+function App() {
 
   const [arrayFavs, setArrayFavs] = useState([])
-  
+
   const [arrayShop, setArrayShop] = useState([])
 
-  const handleFav = (drinkImg, drinkName) => { 
-    if (arrayFavs.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
+  const handleFav = (drinkImg, drinkName) => {
+    if (arrayFavs.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1) {
       setArrayFavs([...arrayFavs, {
         srcImg: drinkImg,
         nameDrink: drinkName,
@@ -21,8 +21,8 @@ function App(){
     }
   }
 
-  const handleShop = (drinkImg, drinkName) => { 
-    if (arrayShop.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1){ 
+  const handleShop = (drinkImg, drinkName) => {
+    if (arrayShop.map(el => el.nameDrink).findIndex(drink => drink.toUpperCase() === drinkName.toUpperCase()) === -1) {
       setArrayShop([...arrayShop, {
         srcImg: drinkImg,
         nameDrink: drinkName
@@ -30,52 +30,53 @@ function App(){
     }
   }
 
-  const removeDrink = (array, nameDrink) => {
-    let index = array.indexOf(nameDrink)
-    console.log(index)
+  const removeDrink = (array, setArray, nameDrink) => {
+    setArray(array.filter(el => el.nameDrink !== nameDrink))
   }
 
   return (
     <Router>
       <Routes>
-        <Route 
+        <Route
           path="/"
-          exact 
-          element = {
-            <ContainerComponents 
-            handleFav = {handleFav}
-            arrayFavs = {arrayFavs}
-            removeDrink = {removeDrink}
-            handleShop = {handleShop}
-            arrayShop = {arrayShop}
-
-            />
-          } 
-        />
-
-        <Route 
-          path="/favs" 
           exact
-          element = {
-            <PageFavs 
-              arrayFavs = {arrayFavs}
-              removeDrink = {removeDrink}
+          element={
+            <ContainerComponents
+              handleFav={handleFav}
+              arrayFavs={arrayFavs}
+              setArrayFavs={setArrayFavs}
+              removeDrink={removeDrink}
+              handleShop={handleShop}
+              arrayShop={arrayShop}
+              setArrayShop={setArrayShop}
             />
           }
         />
 
-        <Route 
-          path="/shop" 
+        <Route
+          path="/favs"
           exact
-          element = {
+          element={
+            <PageFavs
+              arrayFavs={arrayFavs}
+              removeDrink={removeDrink}
+            />
+          }
+        />
+
+        <Route
+          path="/shop"
+          exact
+          element={
             <Shopping
-              arrayShop = {arrayShop}
-              removeDrink = {removeDrink}
+              arrayShop={arrayShop}
+              setArrayShop={setArrayShop}
+              removeDrink={removeDrink}
             />
           }
         />
       </Routes>
-  </Router>
+    </Router>
   )
 }
 
