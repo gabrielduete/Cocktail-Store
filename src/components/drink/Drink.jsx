@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './style.css'
 import { RiHeart3Fill, RiShoppingCart2Line } from "react-icons/ri";
 
-function Drink(props){
+function Drink(props) {
 
     const [styleImgs, setStyleImgs] = useState({
         filter: 'opacity(100%)',
@@ -12,29 +12,25 @@ function Drink(props){
         display: 'none'
     })
 
-    const [styleHeart, setStyleHeart] = useState(false)
-
-    const [styleStore, setStyleStore] = useState(false)
-
     const clickHeart = () => {
         props.handleFav(props.drinkImg, props.drinkName)
-        setStyleHeart(!styleHeart)
+        props.setStyleHeart(!props.styleHeart)
+        props.arrayFavs.map(el =>
+            el.favorited ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
+        )
     }
 
     const clickStore = () => {
         props.handleShop(props.drinkImg, props.drinkName)
-        setStyleStore(!styleStore)
+        props.setStyleStore(!props.styleStore)
     }
-
-    console.log(props.arrayFavs)
-    console.log(props.arrayShop)
 
     return (
         <div>
             <div
-                className = 'drinks'
+                className='drinks'
 
-                onMouseEnter = {() => {
+                onMouseEnter={() => {
                     setStyleImgs({
                         filter: 'opacity(40%)'
                     })
@@ -44,7 +40,7 @@ function Drink(props){
                     })
                 }}
 
-                onMouseLeave = {() =>{
+                onMouseLeave={() => {
                     setStyleImgs({
                         filter: 'opacity(100%)'
                     })
@@ -55,31 +51,30 @@ function Drink(props){
                 }}
             >
 
-                <div className = 'containerButtons' style = {styleButtons}>
+                <div className='containerButtons' style={styleButtons}>
                     <RiHeart3Fill
-                        className = 'heart' 
-                        onClick = {() => 
+                        className='heart'
+                        onClick={() =>
                             clickHeart()
                         }
-                        style = {
-                            styleHeart ? {color: 'var(--roxo)'} : {color: 'var(--branco)'}
+                        style={
+                            props.styleHeart ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
                         }
                     />
-                    
-                    <RiShoppingCart2Line 
-                        className = 'store' 
-                        onClick = {() => 
+
+                    <RiShoppingCart2Line
+                        className='store'
+                        onClick={() =>
                             clickStore()
                         }
-
-                        style = {
-                            styleStore ? {color: 'var(--roxo)'} : {color: 'var(--branco)'}
+                        style={
+                            props.styleStore ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
                         }
                     />
                 </div>
 
-                <img src= {props.drinkImg} alt="imagemCocktail" style = {styleImgs}/>
-                <p style = {styleImgs}> {props.drinkName} </p>
+                <img src={props.drinkImg} alt="imagemCocktail" style={styleImgs} />
+                <p style={styleImgs}> {props.drinkName} </p>
 
             </div>
         </div>

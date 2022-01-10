@@ -12,7 +12,7 @@ function DrinkShop(props) {
                     <p>$59.99</p>
                     <Remove
                         removeDrink={props.removeDrink}
-                        setArrayShop={props.setArrayShop}
+                        setArray={props.setArrayShop}
                         nameDrink1={props.nameDrink}
                         array={props.array}
                     />
