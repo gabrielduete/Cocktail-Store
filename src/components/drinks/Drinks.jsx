@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './style.css'
 import Drink from '../drink/Drink'
 import Slider from "react-slick"
@@ -41,11 +41,6 @@ function Drinks(props) {
       }
     ]
   }
-
-  const [styleHeart, setStyleHeart] = useState(false)
-
-  const [styleStore, setStyleStore] = useState(false)
-
   return (
     <section className='containerDrinks'>
       <Slider {...settings}>
@@ -53,10 +48,6 @@ function Drinks(props) {
         {props.drinks.map(
           drink => <Drink
             drinkName={drink.strDrink}
-            styleHeart={styleHeart}
-            setStyleHeart={setStyleHeart}
-            styleStore={styleStore}
-            setStyleStore={setStyleStore}
             drinkImg={drink.strDrinkThumb}
             handleFav={props.handleFav}
             arrayFavs={props.arrayFavs}

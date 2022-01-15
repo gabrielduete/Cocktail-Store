@@ -1,21 +1,23 @@
-.containerVideo{
-    /* Centralizando os itens */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.containerVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.tittle-Tittle{
-    /* Poscionamento */
-    position: absolute;
-
-    /* Estlizando */
-    color: var(--branco);
-    font-size: 7em;
-    margin-bottom: 15%;
-    filter: drop-shadow(4px 0px 9px var(--preto))
+.tittle-Tittle {
+  position: absolute;
+  color: var(--branco);
+  font-size: 7em;
+  margin-bottom: 15%;
+  filter: drop-shadow(4px 0px 9px var(--preto));
 }
 
-video{
-    width: 100%;
+video {
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .tittle-Tittle {
+    font-size: 3em;
+  }
 }

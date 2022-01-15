@@ -1,23 +1,28 @@
-.containerCarousel{
-    /* Posicionamento */
-    width: 100%;
-    margin-top: 8%;
-    color: var(--branco);
+.containerCarousel {
+  width: 100%;
+  margin-top: 8%;
+  color: var(--branco);
 }
 
-h2{
-    /* Posicionamento e tamanho da fonte */
-    margin-left: 1%;
-    font-size: 2.5em;
+h2 {
+  margin-left: 1%;
+  font-size: 2.5em;
 }
 
-img{
-    /* Arrumando Altura e Filtro de saturação */
-    height: 500px;
-    filter: saturate(110%);
+img {
+  height: 500px;
+  filter: saturate(110%);
 }
 
-span{
-    /* Etliziando */
-    color: var(--roxo);
+span {
+  color: var(--roxo);
+}
+
+@media (max-width: 550px) {
+  h2 {
+    font-size: 1.3em;
+  }
+  img {
+    height: 200px;
+  }
 }

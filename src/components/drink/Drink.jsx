@@ -12,17 +12,18 @@ function Drink(props) {
         display: 'none'
     })
 
+    const [styleHeart, setStyleHeart] = useState()
+
+    const [styleStore, setStyleStore] = useState()
+
     const clickHeart = () => {
         props.handleFav(props.drinkImg, props.drinkName)
-        props.setStyleHeart(!props.styleHeart)
-        props.arrayFavs.map(el =>
-            el.favorited ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
-        )
+        setStyleHeart(!styleHeart)
     }
 
     const clickStore = () => {
         props.handleShop(props.drinkImg, props.drinkName)
-        props.setStyleStore(!props.styleStore)
+        setStyleStore(!styleStore)
     }
 
     return (
@@ -58,7 +59,7 @@ function Drink(props) {
                             clickHeart()
                         }
                         style={
-                            props.styleHeart ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
+                            styleHeart ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
                         }
                     />
 
@@ -68,7 +69,7 @@ function Drink(props) {
                             clickStore()
                         }
                         style={
-                            props.styleStore ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
+                            styleStore ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
                         }
                     />
                 </div>
