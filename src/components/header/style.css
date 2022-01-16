@@ -22,10 +22,15 @@ li{
     list-style: none;
     display: inline-block;
     margin: 1% 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--branco);
     transition-duration: 0.60s;
 }
 
-li:hover, .store:hover{
+a:hover, .store:hover, .iconHamb:active{
     color: gray;
 }
 
@@ -64,4 +69,23 @@ i{
 
 .heart:hover{
     color: var(--roxo);
+}
+
+.iconHamb{
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.divMenu{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.liMenu{
+    display: block;
 }
