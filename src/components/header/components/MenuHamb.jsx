@@ -16,9 +16,9 @@ function MenuHamb(props) {
                 style={props.openMenu ? { display: 'block' } : { display: 'none' }}
             >
                 <ul>
-                    <li className='liMenu'><a href="#">Home</a></li>
-                    <li className='liMenu'><a href="#">Cocktails</a></li>
-                    <li className='liMenu'><a href="#">Contact us</a></li>
+                    <li className='liMenu'>Home</li>
+                    <li className='liMenu'>Cocktails</li>
+                    <li className='liMenu'>Contact us</li>
                 </ul>
 
                 <AiOutlineClose
