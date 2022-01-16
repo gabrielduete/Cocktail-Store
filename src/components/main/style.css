@@ -5,3 +5,10 @@ h3{
     color: var(--branco);
     margin-top: 10%;
 }
+
+@media (max-width: 550px) {
+    h3{
+        font-size: 1.5em;
+    }
+}
+  

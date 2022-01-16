@@ -44,3 +44,9 @@
 .heart, .store{
   cursor: pointer;
 }
+
+@media (max-width: 550px) {
+  .drinks img{
+    height: 150px;
+  }
+}

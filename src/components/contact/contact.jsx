@@ -3,19 +3,18 @@ import './style.css'
 import Form from '../form/Form'
 import Mapp from '../Map/Map'
 
-function Contact(){
+function Contact() {
     return (
         <article>
             <h3>Contact <span>Us</span></h3>
-            
-            <p className = 'pContact'>Localization</p>
-            
-            <div className = 'containerM'>
-                <p>Yeah, our drinks are made at the deep ocean.</p>
+
+            <p className='pContact'>Localization</p>
+
+            <div className='containerM'>
                 <Mapp />
             </div>
 
-            <p className = 'pContact'>Send a message</p>
+            <p className='pContact'>Send a message</p>
             <Form />
         </article>
     )
