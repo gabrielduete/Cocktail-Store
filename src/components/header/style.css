@@ -1,91 +1,91 @@
-header{
-    width: 100%;
-    height: 4.5em;
-    background-color: var(--preto);
-    font-size: 1.1em;
-    color: var(--branco);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: sticky;
-    top: 0;
-    z-index: 2000;
+header {
+  width: 100%;
+  height: 4.5em;
+  background-color: var(--preto);
+  font-size: 1.1em;
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 }
 
-header img{
-    width: 40px;
-    height: 40px;
+header img {
+  width: 40px;
+  height: 40px;
 }
 
-li{
-    cursor: pointer;
-    list-style: none;
-    display: inline-block;
-    margin: 1% 5px;
+li {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  margin: 1% 5px;
 }
 
-a{
-    text-decoration: none;
-    color: var(--branco);
-    transition-duration: 0.60s;
+a {
+  text-decoration: none;
+  color: var(--branco);
+  transition-duration: 0.6s;
 }
 
-a:hover, .store:hover, .iconHamb:active{
-    color: gray;
+a:hover,
+.store:hover,
+.iconHamb:active {
+  color: gray;
 }
 
-i{
-    display: flex;
+i {
+  display: flex;
 }
 
-.storeLove{
-    font-size: 1.3em;
-    cursor: pointer;
-    width: 10%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-left: 40%;
+.storeLove {
+  font-size: 1.3em;
+  cursor: pointer;
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 40%;
 }
 
-.link{
-    color: white;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.link {
+  color: white;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.store{
-    transition-duration: 0.60s;
-    margin-left: 10%;
+.store {
+  transition-duration: 0.6s;
+  margin-left: 10%;
 }
 
-.heart{
-    transition-duration: 0.60s;
+.heart {
+  transition-duration: 0.6s;
 }
 
-
-.heart:hover{
-    color: var(--roxo);
+.heart:hover {
+  color: var(--roxo);
 }
 
-.iconHamb{
-    color: var(--branco);
-    cursor: pointer;
+.iconHamb {
+  color: var(--branco);
+  cursor: pointer;
 }
 
-.divMenu{
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10%;
-    background-color: rgba(0, 0, 0, 0.493);
+.divMenu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10%;
+  background-color: rgba(0, 0, 0, 0.493);
 }
 
-.liMenu{
-    display: block;
+.liMenu {
+  display: block;
 }
