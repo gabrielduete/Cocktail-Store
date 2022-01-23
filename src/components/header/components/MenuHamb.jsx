@@ -5,29 +5,30 @@ import IconLinks from './IconsLinks'
 function MenuHamb(props) {
     return (
         <>
+            <div
+                className='divMenu'
+                style={props.openMenu ? { display: 'block' } : { display: 'none' }}
+            >
+
+                <ul className='itensMobile'>
+                    <li className='liMenu'>Home</li>
+                    <li className='liMenu'>Cocktails</li>
+                    <li className='liMenu'>Contact us</li>
+                    <li className='liMenu'>Favorited</li>
+                    <li className='liMenu'>Stored</li>
+                </ul>
+                <IconLinks />
+            </div>
             <AiOutlineMenu
                 className='iconHamb'
                 onClick={() => props.changeMenu()}
                 style={props.openMenu ? { display: 'none' } : { display: 'block' }}
             />
-
-            <div
-                className='divMenu'
+            <AiOutlineClose
+                className='iconHamb'
+                onClick={() => props.changeMenu()}
                 style={props.openMenu ? { display: 'block' } : { display: 'none' }}
-            >
-                <ul>
-                    <li className='liMenu'>Home</li>
-                    <li className='liMenu'>Cocktails</li>
-                    <li className='liMenu'>Contact us</li>
-                </ul>
-
-                <AiOutlineClose
-                    className='iconHamb'
-                    onClick={() => props.changeMenu()}
-                    style={props.openMenu ? { display: 'block' } : { display: 'none' }}
-                />
-                <IconLinks />
-            </div>
+            />
         </>
     )
 }
