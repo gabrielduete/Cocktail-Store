@@ -1,60 +1,60 @@
-.container-bg{
-    background: var(--preto);
-    color: var(--branco);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-bg {
+  background: var(--preto);
+  color: var(--branco);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.containerShop-bg{
-    margin: 3%;
-    width: 100%;
+.containerShop-bg {
+  margin: 3%;
+  width: 100%;
 }
 
-.container-Shop-all{
-    width: 40%;
+.container-Shop-all {
+  width: 40%;
 }
 
-.containerShop-bg p{
-    font-size: 1.8em;
-    margin-bottom: 1.2%;
+.containerShop-bg p {
+  font-size: 1.8em;
+  margin-bottom: 1.2%;
 }
 
-.tittle-Shop{
-    font-size: 7em;
-    margin-bottom: 3%;
-    filter: drop-shadow(4px 0px 9px var(--preto));
+.tittle-Shop {
+  font-size: 7em;
+  margin-bottom: 3%;
+  filter: drop-shadow(4px 0px 9px var(--preto));
 }
 
-.containerShop-drinks{
-    border: 2px inset rgb(218, 95, 235);
-    width: 100%;
-    height: 500px;
-    overflow: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+.containerShop-drinks {
+  border: 2px inset rgb(218, 95, 235);
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.drinkShop{
-    margin: 1%;
-    margin-left: 3%;
-    width: 100%;
-    height: 30%;
-    display: flex;
+.drinkShop {
+  margin: 1%;
+  margin-left: 3%;
+  width: 100%;
+  height: 30%;
+  display: flex;
 }
 
-.drinkShop-texts{
-    margin-left: 3%;
-    font-size: 0.7em;
-    line-height: 1.3;
+.drinkShop-texts {
+  margin-left: 3%;
+  font-size: 0.7em;
+  line-height: 1.3;
 }
 
-.drinkShop img{
-    max-width: 50%;
-    height: 100%;
+.drinkShop img {
+  max-width: 50%;
+  height: 100%;
 }
 
 .containerShop-drinks::-webkit-scrollbar {
@@ -66,33 +66,46 @@
 }
 
 .containerShop-drinks::-webkit-scrollbar-thumb {
-  background-color: var(--roxo);   
-  border-radius: 20px;       
-  border: 3px solid rgb(255, 255, 255);  
+  background-color: var(--roxo);
+  border-radius: 20px;
+  border: 3px solid rgb(255, 255, 255);
 }
 
-.buttons{
-    margin: 3%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.buttons {
+  margin: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.buttonBuy{
+.buttonBuy {
+  font-size: 1.3em;
+}
+
+hr {
+  border-color: rgb(43, 42, 42);
+}
+
+.remove {
+  width: 80px;
+  height: 20px;
+  font-size: 1.4em;
+  transition-duration: 0.4s;
+}
+
+.remove:hover {
+  background-color: rgb(170, 20, 20);
+}
+
+@media (max-width: 550px) {
+  .tittle-Shop {
+    font-size: 3em;
+  }
+  .containerShop-bg p {
     font-size: 1.3em;
-}
+  }
 
-hr{
-    border-color: rgb(43, 42, 42);
-}
-
-.remove{
-    width: 80px;
-    height: 20px;
-    font-size: 1.4em;
-    transition-duration: 0.40s;
-}
-
-.remove:hover{
-    background-color: rgb(170, 20, 20);
+  .container-Shop-all {
+    width: 80%;
+  }
 }
