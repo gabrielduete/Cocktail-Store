@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import ContainerComponents from "./Pages/main/ContainerComponents";
-import PageFavs from "./Pages/pageFavs/PageFavs";
-import Shopping from "./Pages/buys/Shopping";
+import ContainerComponents from "./Pages/main/index";
+import PageFavs from "./Pages/pageFavs/index";
+import Shopping from "./Pages/buys/index";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
