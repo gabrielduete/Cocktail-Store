@@ -27,3 +27,5 @@
 - [react-typical para o titulo]()
 - [react-responsive-carousel para o carrossel das imagens]()
 - [react-slick para o slider dos drinks]()
+
+--- _AINDA EM DESENVOLVIMENTO_ ---
