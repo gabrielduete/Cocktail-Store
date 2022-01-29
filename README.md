@@ -6,7 +6,7 @@
 
 ## Acesse aqui: https://cocktail-store-beige.vercel.app/
 
-## Tecnologias
+# Tecnologias
 
 - [Javascript]()
 - [HTML]()
