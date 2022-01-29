@@ -30,7 +30,7 @@ a {
   transition-duration: 0.6s;
 }
 
-a:hover,
+li:hover,
 .store:hover,
 .iconHamb:active {
   color: gray;
@@ -112,7 +112,7 @@ i {
     background-color: rgb(0, 0, 0);
     color: white;
     z-index: 101;
-    padding: 100px 0px;
+    padding: 200px 0px;
   }
 
   .liMenu {

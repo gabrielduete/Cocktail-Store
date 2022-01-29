@@ -5,7 +5,7 @@ import Mapp from '../Map/index'
 
 function Contact() {
     return (
-        <article>
+        <article id='contact'>
             <h3>Contact <span>Us</span></h3>
 
             <p className='pContact'>Localization</p>

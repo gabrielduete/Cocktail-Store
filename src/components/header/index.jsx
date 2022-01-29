@@ -13,14 +13,13 @@ function Header(props) {
   }
 
   return (
-
     <>
       <header>
         <img src={Icone} alt="iconHeader" />
         <ul>
-          <li className='liMenu'>Home</li>
-          <li className='liMenu'>Cocktails</li>
-          <li className='liMenu'>Contact us</li>
+          <li className='liMenu'><a href='#containerVideo'>Home</a></li>
+          <li className='liMenu'><a href='#main'>Cocktails</a></li>
+          <li className='liMenu'><a href='#contact'>Contact us</a></li>
         </ul>
         <IconLinks
           arrayFavs={props.arrayFavs}
@@ -33,10 +32,14 @@ function Header(props) {
           className='componentMenu'
           openMenu={openMenu}
           changeMenu={changeMenu}
+          arrayFavs={props.arrayFavs}
+          setArrayFavs={props.setArrayFavs}
+          removeDrink={props.removeDrink}
+          arrayShop={props.arrayShop}
+          setArrayShop={props.setArrayShop}
         />
-      </header>
+      </header >
     </>
-
   )
 }
 

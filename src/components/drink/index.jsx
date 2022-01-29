@@ -12,18 +12,12 @@ function Drink(props) {
         display: 'none'
     })
 
-    const [styleHeart, setStyleHeart] = useState()
-
-    const [styleStore, setStyleStore] = useState()
-
     const clickHeart = () => {
         props.handleFav(props.drinkImg, props.drinkName)
-        setStyleHeart(!styleHeart)
     }
 
     const clickStore = () => {
         props.handleShop(props.drinkImg, props.drinkName)
-        setStyleStore(!styleStore)
     }
 
     return (
@@ -58,18 +52,12 @@ function Drink(props) {
                         onClick={() =>
                             clickHeart()
                         }
-                        style={
-                            styleHeart ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
-                        }
                     />
 
                     <RiShoppingCart2Line
                         className='store'
                         onClick={() =>
                             clickStore()
-                        }
-                        style={
-                            styleStore ? { color: 'var(--roxo)' } : { color: 'var(--branco)' }
                         }
                     />
                 </div>
