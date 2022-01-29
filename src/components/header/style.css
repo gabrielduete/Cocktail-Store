@@ -30,7 +30,7 @@ a {
   transition-duration: 0.6s;
 }
 
-li:hover,
+a:hover,
 .store:hover,
 .iconHamb:active {
   color: gray;
