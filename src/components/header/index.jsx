@@ -18,7 +18,7 @@ function Header(props) {
         <img src={Icone} alt="iconHeader" />
         <ul>
           <li className='liMenu'><a href='#home'>Home</a></li>
-          <li className='liMenu'><a href='#main'>Cocktails</a></li>
+          <li className='liMenu'><a href='#cocktails'>Cocktails</a></li>
           <li className='liMenu'><a href='#contact'>Contact us</a></li>
         </ul>
         <IconLinks

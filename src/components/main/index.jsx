@@ -19,7 +19,7 @@ function Main(props) {
     }, [])
 
     return (
-        <main id='main'>
+        <main id='cocktails'>
             <h3>Choose your <span>cocktails</span></h3>
             <Drinks
                 drinks={drinks}
