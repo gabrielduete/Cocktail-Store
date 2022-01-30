@@ -12,9 +12,9 @@ function MenuHamb(props) {
             >
 
                 <ul className='itensMobile'>
-                    <li className='liMenu'>Home</li>
-                    <li className='liMenu'>Cocktails</li>
-                    <li className='liMenu'>Contact us</li>
+                    <li className='liMenu'><a href='#home'>Home</a></li>
+                    <li className='liMenu'><a href='#cocktails'>Cocktails</a></li>
+                    <li className='liMenu'><a href='#contact'>Contact us</a></li>
 
                     <li className='liMenu'>
                         <Link to="/favs"
