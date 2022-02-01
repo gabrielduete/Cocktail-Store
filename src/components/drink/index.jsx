@@ -48,14 +48,14 @@ function Drink(props) {
 
                 <div className='containerButtons' style={styleButtons}>
                     <RiHeart3Fill
-                        className='heart'
+                        className='heart heart-2'
                         onClick={() =>
                             clickHeart()
                         }
                     />
 
                     <RiShoppingCart2Line
-                        className='store'
+                        className='store store-2'
                         onClick={() =>
                             clickStore()
                         }

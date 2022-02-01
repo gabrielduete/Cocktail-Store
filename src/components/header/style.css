@@ -127,4 +127,9 @@ i {
   .store {
     display: none;
   }
+
+  .heart-2,
+  .store-2 {
+    display: block;
+  }
 }
