@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DrinkShop from './components/DrinksShop'
 import './shopping.css'
 import ButtonReturn from '../../components/buttonReturn/index'
@@ -6,6 +6,12 @@ import ButtonReturn from '../../components/buttonReturn/index'
 function Shopping(props) {
 
     let count = 0
+
+    const [buy, setBuy] = useState()
+
+    const buyDrinks = () => {
+        props.setArrayShop([])
+    }
 
     return (
         <section className='container-bg'>
@@ -35,7 +41,10 @@ function Shopping(props) {
                 </div>
                 <div className='buttons'>
                     <ButtonReturn />
-                    <button className='buttonBuy'>Buy</button>
+                    <button
+                        className='buttonBuy'
+                        onClick={() => buyDrinks()}
+                    >Buy</button>
                 </div>
             </div>
         </section>
