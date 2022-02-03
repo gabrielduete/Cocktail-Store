@@ -7,18 +7,33 @@ function Shopping(props) {
 
     let count = 0
 
-    const [buy, setBuy] = useState()
+    const [buy, setBuy] = useState(false)
 
-    const buyDrinks = () => {
-        props.setArrayShop([])
+    const renderButton = () => {
+        return (
+            <>
+                {
+                    buy && (
+                        <button
+                            className='buttonBuy'
+                            onClick={() => buyDrinks()}
+                        >Buy</button>
+                    )
+                }
+            </>
+        )
     }
 
-    return (
-        <section className='container-bg'>
-            <div className='container-Shop-all'>
-                <div className='containerShop-bg'>
-                    <h1 className='tittle-Shop'>Shopping</h1>
-                    <p><span>PROMOTION:</span> All drinks for $59.99!</p>
+    const renderDrinks = () => {
+        if (props.arrayShop.length === 0) {
+            return (
+                <>
+                    <p>You didn't buy anything</p>
+                </>
+            )
+        } else {
+            return (
+                <>
                     <div className='containerShop-drinks'>
                         {
                             props.arrayShop.map(el =>
@@ -38,13 +53,27 @@ function Shopping(props) {
                         }
                     </div>
                     <p style={{ marginTop: '3%' }}>Value: {count}</p>
+                </>
+            )
+        }
+    }
+
+    const buyDrinks = () => {
+        props.setArrayShop([])
+        setBuy(false)
+    }
+
+    return (
+        <section className='container-bg'>
+            <div className='container-Shop-all'>
+                <div className='containerShop-bg'>
+                    <h1 className='tittle-Shop'>Shopping</h1>
+                    <p><span>PROMOTION:</span> All drinks for $59.99!</p>
+                    {renderDrinks()}
                 </div>
                 <div className='buttons'>
                     <ButtonReturn />
-                    <button
-                        className='buttonBuy'
-                        onClick={() => buyDrinks()}
-                    >Buy</button>
+                    {renderButton()}
                 </div>
             </div>
         </section>
