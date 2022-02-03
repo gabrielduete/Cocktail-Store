@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import "./App.css";
-import ContainerComponents from "./Pages/main/index";
-import PageFavs from "./Pages/pageFavs/index";
-import Shopping from "./Pages/buys/index";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useState } from "react"
+import "./App.css"
+import ContainerComponents from "./Pages/main/index"
+import PageFavs from "./Pages/pageFavs/index"
+import Shopping from "./Pages/buys/index"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App() {
-  const [arrayFavs, setArrayFavs] = useState([]);
+  const [arrayFavs, setArrayFavs] = useState([])
 
-  const [arrayShop, setArrayShop] = useState([]);
+  const [arrayShop, setArrayShop] = useState([])
 
   const handleFav = (drinkImg, drinkName) => {
     if (
@@ -99,4 +99,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
