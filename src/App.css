@@ -1,43 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
-@import "~slick-carousel/slick/slick.css"; 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-:root{
+:root {
   --roxo: rgb(160, 99, 201);
   --branco: rgb(255, 255, 255);
   --preto: rgb(0, 0, 0);
 }
 
-body{
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(31,30,31,1) 100%);
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(31, 30, 31, 1) 100%
+  );
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-span{
+span {
   color: var(--roxo);
 }
 
 .leaflet-container {
-	width: 80%;
-	height: 400px;
-	border-radius: 8px;;
-	box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.514);
+  width: 80%;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.514);
 }
 
 @media (max-width: 550px) {
-  .leaflet-container{
+  .leaflet-container {
     width: 70%;
   }
 }
 
-.leaflet-marker-icon .leaflet-zoom-animated .leaflet-interactive{
+.leaflet-marker-icon .leaflet-zoom-animated .leaflet-interactive {
   background-color: red;
   color: red;
 }
@@ -47,11 +52,61 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(255, 255, 255);    
+  background: rgb(255, 255, 255);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(8, 8, 8); 
+  background-color: rgb(8, 8, 8);
   border-radius: 20px;
   border: 3px solid rgb(255, 255, 255);
+}
+
+.loader-container {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loader-container span {
+  color: white;
+  margin: 0 1px 100px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.loader-container div {
+  position: absolute;
+  border: 3px solid var(--roxo);
+  border-radius: 50%;
+  animation: loader 2.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.loader-container div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+.loader img {
+  width: 55px;
+  height: 55px;
+}
+
+@keyframes loader {
+  0% {
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 42%;
+    left: 55%;
+    width: 88px;
+    height: 88px;
+    opacity: 0;
+  }
 }
