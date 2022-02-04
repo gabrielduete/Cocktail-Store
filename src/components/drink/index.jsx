@@ -18,6 +18,7 @@ function Drink(props) {
 
     const clickStore = () => {
         props.handleShop(props.drinkImg, props.drinkName)
+        props.setBuy(true)
     }
 
     return (

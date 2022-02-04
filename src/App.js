@@ -10,6 +10,8 @@ function App() {
 
   const [arrayShop, setArrayShop] = useState([])
 
+  const [buy, setBuy] = useState(false)
+
   const handleFav = (drinkImg, drinkName) => {
     if (
       arrayFavs
@@ -25,9 +27,9 @@ function App() {
           nameDrink: drinkName,
           favorited: true,
         },
-      ]);
+      ])
     }
-  };
+  }
 
   const handleShop = (drinkImg, drinkName) => {
     if (
@@ -44,13 +46,13 @@ function App() {
           nameDrink: drinkName,
           favorited: true,
         },
-      ]);
+      ])
     }
-  };
+  }
 
   const removeDrink = (array, setArray, nameDrink) => {
-    setArray(array.filter((el) => el.nameDrink !== nameDrink));
-  };
+    setArray(array.filter((el) => el.nameDrink !== nameDrink))
+  }
 
   return (
     <Router>
@@ -67,6 +69,8 @@ function App() {
               handleShop={handleShop}
               arrayShop={arrayShop}
               setArrayShop={setArrayShop}
+              buy={buy}
+              setBuy={setBuy}
             />
           }
         />
@@ -91,6 +95,8 @@ function App() {
               arrayShop={arrayShop}
               setArrayShop={setArrayShop}
               removeDrink={removeDrink}
+              buy={buy}
+              setBuy={setBuy}
             />
           }
         />

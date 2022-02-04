@@ -26,6 +26,8 @@ function Main(props) {
                 handleFav={props.handleFav}
                 arrayFavs={props.arrayFavs}
                 setArrayFavs={props.setArrayFavs}
+                buy={props.buy}
+                setBuy={props.setBuy}
 
                 handleShop={props.handleShop}
                 arrayShop={props.arrayShop}
