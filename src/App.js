@@ -12,6 +12,8 @@ function App() {
 
   const [buy, setBuy] = useState(false)
 
+  const [buysCount, setBuysCount] = useState(0)
+
   const handleFav = (drinkImg, drinkName) => {
     if (
       arrayFavs
@@ -71,6 +73,8 @@ function App() {
               setArrayShop={setArrayShop}
               buy={buy}
               setBuy={setBuy}
+              buysCount={buysCount}
+              setBuysCount={setBuysCount}
             />
           }
         />

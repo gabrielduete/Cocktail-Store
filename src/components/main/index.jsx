@@ -28,6 +28,8 @@ function Main(props) {
                 setArrayFavs={props.setArrayFavs}
                 buy={props.buy}
                 setBuy={props.setBuy}
+                buysCount={props.buysCount}
+                setBuysCount={props.setBuysCount}
 
                 handleShop={props.handleShop}
                 arrayShop={props.arrayShop}

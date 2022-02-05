@@ -19,6 +19,15 @@ function Drink(props) {
     const clickStore = () => {
         props.handleShop(props.drinkImg, props.drinkName)
         props.setBuy(true)
+        if (
+            props.arrayShop
+                .map((el) => el.nameDrink)
+                .findIndex(
+                    (drink) => drink.toUpperCase() === props.drinkName.toUpperCase()
+                ) === -1
+        ) {
+            props.setBuysCount(props.buysCount + 1)
+        }
     }
 
     return (

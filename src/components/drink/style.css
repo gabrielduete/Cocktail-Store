@@ -43,13 +43,32 @@
   color: var(--branco);
 }
 
+i {
+  position: relative;
+}
+
 .heart,
 .store {
   cursor: pointer;
 }
 
+.link span {
+  font-size: 0.8em;
+  position: absolute;
+  top: -8px;
+  right: 5%;
+  font-weight: 600;
+  background-color: rgba(14, 13, 13, 0.596);
+  padding: 2px 4px;
+  border-radius: 20%;
+}
+
 @media (max-width: 550px) {
   .drinks img {
     height: 150px;
+  }
+
+  .link span {
+    display: none;
   }
 }

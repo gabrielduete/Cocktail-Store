@@ -16,6 +16,8 @@ function ContainerComponents(props) {
         arrayShop={props.arrayShop}
         setArrayShop={props.setArrayShop}
         removeDrink={props.removeDrink}
+        buysCount={props.buysCount}
+        setBuysCount={props.setBuysCount}
       />
       <Title />
       <CarouselImgs />
@@ -28,6 +30,8 @@ function ContainerComponents(props) {
         setArrayShop={props.setArrayShop}
         buy={props.buy}
         setBuy={props.setBuy}
+        buysCount={props.buysCount}
+        setBuysCount={props.setBuysCount}
       />
       <Contact />
       <Footer />

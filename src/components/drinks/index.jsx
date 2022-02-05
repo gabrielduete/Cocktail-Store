@@ -57,6 +57,8 @@ function Drinks(props) {
             setArrayShop={props.setArrayShop}
             buy={props.buy}
             setBuy={props.setBuy}
+            buysCount={props.buysCount}
+            setBuysCount={props.setBuysCount}
           />
         )}
 

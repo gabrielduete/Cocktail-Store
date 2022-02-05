@@ -27,6 +27,8 @@ function Header(props) {
           removeDrink={props.removeDrink}
           arrayShop={props.arrayShop}
           setArrayShop={props.setArrayShop}
+          buysCount={props.buysCount}
+          setBuysCount={props.setBuysCount}
         />
         <MenuHamb
           className='componentMenu'
