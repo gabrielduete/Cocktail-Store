@@ -49,11 +49,13 @@ function App() {
           favorited: true,
         },
       ])
+      setBuy(buysCount + 1)
     }
   }
 
   const removeDrink = (array, setArray, nameDrink) => {
     setArray(array.filter((el) => el.nameDrink !== nameDrink))
+    setBuysCount(buysCount - 1)
   }
 
   return (
@@ -106,7 +108,7 @@ function App() {
         />
       </Routes>
     </Router>
-  );
+  )
 }
 
 export default App
