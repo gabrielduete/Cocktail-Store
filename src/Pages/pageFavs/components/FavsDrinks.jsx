@@ -3,7 +3,6 @@ import "../pageFavs.css"
 import Remove from '../../../components/remove/index'
 
 function FavDrinks(props) {
-  console.log(props.setArray)
   return (
     <>
       <div className="drinkShop">

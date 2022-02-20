@@ -57,6 +57,8 @@ function Shopping(props) {
                                     changeCount={changeCount}
                                     initialCount={initialCount}
                                     initialCont={initialCont}
+                                    setCount={setCount}
+                                    count={count}
                                 />
                             )
                         }

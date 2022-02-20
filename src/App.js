@@ -14,7 +14,7 @@ function App() {
 
   const [buysCount, setBuysCount] = useState(0)
 
-  const handleFav = (drinkImg, drinkName) => {
+  const handleFav = (drinkImg, drinkName, qtd) => {
     if (
       arrayFavs
         .map((el) => el.nameDrink)
@@ -28,12 +28,13 @@ function App() {
           srcImg: drinkImg,
           nameDrink: drinkName,
           favorited: true,
+          qtd,
         },
       ])
     }
   }
 
-  const handleShop = (drinkImg, drinkName) => {
+  const handleShop = (drinkImg, drinkName, qtd) => {
     if (
       arrayShop
         .map((el) => el.nameDrink)
@@ -47,9 +48,10 @@ function App() {
           srcImg: drinkImg,
           nameDrink: drinkName,
           favorited: true,
+          qtd,
         },
       ])
-      setBuy(buysCount + 1)
+      setBuy(buysCount + 1);
     }
   }
 
@@ -108,7 +110,7 @@ function App() {
         />
       </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

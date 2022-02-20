@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './style.css'
-import { RiHeart3Fill, RiShoppingCart2Line } from "react-icons/ri";
+import { RiHeart3Fill, RiShoppingCart2Line } from "react-icons/ri"
 
 function Drink(props) {
 

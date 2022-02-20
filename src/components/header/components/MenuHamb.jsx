@@ -19,18 +19,14 @@ function MenuHamb(props) {
                     <li className='liMenu'>
                         <Link to="/favs"
                             className="link"
-                            arrayShop={props.arrayShop}
-                            setArrayShop={props.setArrayShop}
-                            removeDrink={props.removeDrink}>
+                        >
                             Favorited
                         </Link>
                     </li>
                     <li className='liMenu'>
                         <Link to="/shop"
                             className="link"
-                            arrayShop={props.arrayShop}
-                            setArrayShop={props.setArrayShop}
-                            removeDrink={props.removeDrink}>
+                        >
                             Shopping
                         </Link>
                     </li>
