@@ -4,6 +4,7 @@ import ContainerComponents from "./Pages/main/index"
 import PageFavs from "./Pages/pageFavs/index"
 import Shopping from "./Pages/buys/index"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import CooktailContextProvider from "./contexts/CooktailContext"
 
 function App() {
   const [arrayFavs, setArrayFavs] = useState([])
@@ -61,55 +62,57 @@ function App() {
   }
 
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          exact
-          element={
-            <ContainerComponents
-              handleFav={handleFav}
-              arrayFavs={arrayFavs}
-              setArrayFavs={setArrayFavs}
-              removeDrink={removeDrink}
-              handleShop={handleShop}
-              arrayShop={arrayShop}
-              setArrayShop={setArrayShop}
-              buy={buy}
-              setBuy={setBuy}
-              buysCount={buysCount}
-              setBuysCount={setBuysCount}
-            />
-          }
-        />
+    <CooktailContextProvider>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={
+              <ContainerComponents
+                handleFav={handleFav}
+                arrayFavs={arrayFavs}
+                setArrayFavs={setArrayFavs}
+                removeDrink={removeDrink}
+                handleShop={handleShop}
+                arrayShop={arrayShop}
+                setArrayShop={setArrayShop}
+                buy={buy}
+                setBuy={setBuy}
+                buysCount={buysCount}
+                setBuysCount={setBuysCount}
+              />
+            }
+          />
 
-        <Route
-          path="/favs"
-          exact
-          element={
-            <PageFavs
-              arrayFavs={arrayFavs}
-              setArrayFavs={setArrayFavs}
-              removeDrink={removeDrink}
-            />
-          }
-        />
+          <Route
+            path="/favs"
+            exact
+            element={
+              <PageFavs
+                arrayFavs={arrayFavs}
+                setArrayFavs={setArrayFavs}
+                removeDrink={removeDrink}
+              />
+            }
+          />
 
-        <Route
-          path="/shop"
-          exact
-          element={
-            <Shopping
-              arrayShop={arrayShop}
-              setArrayShop={setArrayShop}
-              removeDrink={removeDrink}
-              buy={buy}
-              setBuy={setBuy}
-            />
-          }
-        />
-      </Routes>
-    </Router>
+          <Route
+            path="/shop"
+            exact
+            element={
+              <Shopping
+                arrayShop={arrayShop}
+                setArrayShop={setArrayShop}
+                removeDrink={removeDrink}
+                buy={buy}
+                setBuy={setBuy}
+              />
+            }
+          />
+        </Routes>
+      </Router>
+    </CooktailContextProvider>
   );
 }
 
