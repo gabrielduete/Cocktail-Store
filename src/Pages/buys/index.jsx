@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DrinkShop from './components/DrinksShop'
 import './shopping.css'
 import ButtonReturn from '../../components/buttonReturn/index'
 
 function Shopping(props) {
 
-    let count = 0
+    let cont = 0
+
+    const [initialCont, setInitialCont] = useState(false)
+
+    const [count, setCount] = useState(0)
+
+    const changeCount = (number) => {
+        setCount(count + number * 59.99)
+    }
+
+    const initialCount = () => {
+        setCount(cont)
+        setInitialCont(true)
+    }
 
     const renderButton = () => {
         return (
@@ -41,16 +54,20 @@ function Shopping(props) {
                                     removeDrink={props.removeDrink}
                                     setArrayShop={props.setArrayShop}
                                     array={props.arrayShop}
+                                    changeCount={changeCount}
+                                    initialCount={initialCount}
+                                    initialCont={initialCont}
                                 />
                             )
                         }
+
                         {
                             props.arrayShop.forEach(() => {
-                                count += 59.99
+                                cont += 59.99
                             })
                         }
                     </div>
-                    <p style={{ marginTop: '3%' }}>Value: {count}</p>
+                    <p style={{ marginTop: '3%' }}>Value: {count.toFixed(2)}</p>
                 </>
             )
         }
