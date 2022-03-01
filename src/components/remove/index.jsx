@@ -9,9 +9,6 @@ function Remove(props) {
                     let element = props.array[i].nameDrink;
                     if (element === props.nameDrink1) {
                         props.removeDrink(props.array, props.setArray, props.nameDrink1)
-                        props.arrayShop.length === 1 && (
-                            props.setBuy(false)
-                        )
                     }
                 }
             }}

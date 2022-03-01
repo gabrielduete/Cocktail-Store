@@ -1,6 +1,9 @@
+/* 
+ NOTE: 
+*/
+
 import { createContext, useState } from "react";
 import { getCocktails } from "../api/api";
-
 
 export const CooktailContext = createContext({});
 
@@ -19,7 +22,7 @@ function CooktailContextProvider({ children }) {
             handleCoktails,
             drinks
         }}>
-            { children }
+            {children}
         </CooktailContext.Provider>
     )
 }

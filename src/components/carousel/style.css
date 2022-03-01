@@ -26,3 +26,9 @@ span {
     height: 200px;
   }
 }
+
+@media (min-width: 1250px) {
+  img {
+    height: 700px;
+  }
+}
