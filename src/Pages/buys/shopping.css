@@ -97,29 +97,6 @@ hr {
   background-color: rgb(170, 20, 20);
 }
 
-.actions{
-  display: flex;
-  flex-direction: column;
-}
-
-.actions div{
-  margin: 15px 0px;
-  display: flex;
-  justify-content: space-between;
-  width: 85px;
-}
-
-.actions span{
-  font-size: 1.3em;
-}
-
-.actions input{
-  width: 40px;
-  font-size: 1.3em;
-  padding: 0px 2px;
-  outline: none;
-}
-
 @media (max-width: 550px) {
   .tittle-Shop {
     font-size: 3em;

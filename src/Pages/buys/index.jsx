@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import DrinkShop from './components/DrinksShop'
 import './shopping.css'
 import ButtonReturn from '../../components/buttonReturn/index'
@@ -6,19 +6,6 @@ import ButtonReturn from '../../components/buttonReturn/index'
 function Shopping(props) {
 
     let cont = 0
-
-    const [initialCont, setInitialCont] = useState(false)
-
-    const [count, setCount] = useState(0)
-
-    const changeCount = (number) => {
-        setCount(count + number * 59.99)
-    }
-
-    const initialCount = () => {
-        setCount(cont)
-        setInitialCont(true)
-    }
 
     const renderButton = () => {
         return (
@@ -53,12 +40,10 @@ function Shopping(props) {
                                     nameDrink={el.nameDrink}
                                     removeDrink={props.removeDrink}
                                     setArrayShop={props.setArrayShop}
+                                    arrayShop={props.arrayShop}
                                     array={props.arrayShop}
-                                    changeCount={changeCount}
-                                    initialCount={initialCount}
-                                    initialCont={initialCont}
-                                    setCount={setCount}
-                                    count={count}
+                                    buy={props.buy}
+                                    setBuy={props.setBuy}
                                 />
                             )
                         }
@@ -69,7 +54,7 @@ function Shopping(props) {
                             })
                         }
                     </div>
-                    <p style={{ marginTop: '3%' }}>Value: {count.toFixed(2)}</p>
+                    <p style={{ marginTop: '3%' }}>Value: {cont}</p>
                 </>
             )
         }

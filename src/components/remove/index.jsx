@@ -8,8 +8,10 @@ function Remove(props) {
                 for (let i in props.array) {
                     let element = props.array[i].nameDrink;
                     if (element === props.nameDrink1) {
-                        props.setCount(props.count - 59.99)
-                        props.removeDrink(props.array, props.setArray, props.nameDrink1, props.setCount, props.Count)
+                        props.removeDrink(props.array, props.setArray, props.nameDrink1)
+                        props.arrayShop.length === 1 && (
+                            props.setBuy(false)
+                        )
                     }
                 }
             }}
