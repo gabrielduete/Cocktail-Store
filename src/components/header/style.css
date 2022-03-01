@@ -82,7 +82,7 @@ i {
   visibility: hidden;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   ul {
     display: none;
     margin-top: 5%;
