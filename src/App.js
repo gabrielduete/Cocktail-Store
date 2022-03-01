@@ -57,8 +57,11 @@ function App() {
   }
 
   const removeDrink = (array, setArray, nameDrink) => {
-    setArray(array.filter((el) => el.nameDrink !== nameDrink))
     setBuysCount(buysCount - 1)
+    setArray(array.filter((el) => el.nameDrink !== nameDrink))
+    arrayShop.length === 1 && (
+      setBuy(false)
+    )
   }
 
   return (

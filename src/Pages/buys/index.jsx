@@ -69,7 +69,7 @@ function Shopping(props) {
         <section className='container-bg'>
             <div className='container-Shop-all'>
                 <div className='containerShop-bg'>
-                    <h1 className='tittle-Shop'>Shopping</h1>
+                    <h1 className='tittle-big'>Shopping</h1>
                     <p><span>PROMOTION:</span> All drinks for $59.99!</p>
                     {renderDrinks()}
                 </div>

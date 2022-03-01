@@ -1,5 +1,4 @@
 import React from "react"
-import "../pageFavs.css"
 import Remove from '../../../components/remove/index'
 
 function FavDrinks(props) {
