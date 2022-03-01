@@ -1,5 +1,9 @@
 /* 
- NOTE: 
+ NOTE: This component was created to implement the use of React Context in the project,
+ but the project is very old and with very bad syntax, so 
+ I preferred to learn how to use react context through another project.
+
+ Think about the scalability of your projects hehe!
 */
 
 import { createContext, useState } from "react";
